@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = "me.sebbert.hyperchillin.Plugin"
+defaultTasks 'clean', 'jar'
+
+version = '1.0.0'
+jar.baseName = 'hyperchillin'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'net.pms:ums:+'
+}
